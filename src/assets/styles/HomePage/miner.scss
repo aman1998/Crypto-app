@@ -1,0 +1,92 @@
+@import '../templates.scss';
+@import '../variables.scss';
+
+.miner {
+  position: relative;
+  margin-bottom: 110px !important;
+  .photo-mask {
+    width: 100%;
+  }
+  .photo {
+    position: absolute;
+    right: 20px;
+    bottom: 25%;
+  }
+  &__content {
+    position: absolute;
+    top: 200px;
+    left: 171px;
+    color: $lightBg;
+    .title {
+      @include fs48;
+      margin: 20px 0 11px 0;
+      max-width: 570px;
+      font-weight: 500;
+      font-family: 'Rubik', sans-serif;
+    }
+    .text {
+      @include fs18;
+      margin-bottom: 41px;
+      font-weight: 300;
+      max-width: 556px;
+    }
+    .platforms {
+      display: flex;
+      margin-bottom: 26px;
+      .platform {
+        display: flex;
+        padding: 14px 19px;
+        background: #0B060C;
+        width: 350px;
+        // width: 100%;
+        box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.15);
+        border-radius: 38.5px;
+        &:nth-child(2) {
+          margin-left: 50px;
+        }
+        img {
+          margin-right: 28px;
+          width: 40px;
+          height: 40px;
+        }
+        .right {
+          div {
+            &:nth-child(2) {
+              @include fs12;
+              margin-bottom: 10px;
+              font-weight: 600;
+            }
+            &:nth-child(2) {
+              @include fs12;
+              font-weight: 600;
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+    }
+    .statistics {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      .left, .right {
+        @include fs18;
+        font-weight: 300;
+        span {
+          color: $redBg;
+        }
+        .number {
+            @include fs48;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+      }
+      .left {
+        margin-right: 50px;
+      }
+      .right {
+        margin-left: 50px;
+      }
+    }
+  }
+}

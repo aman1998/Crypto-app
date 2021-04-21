@@ -1,0 +1,81 @@
+@import '../templates.scss';
+@import '../variables.scss';
+
+.header {
+  background: url('../../images/MaskGroup.png') center/cover;
+  height: 848px;
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1378px;
+    .logo {
+      width: 180px;
+      height: 62px;
+      object-fit: cover;
+    }
+    ul {
+      @include fs13;
+      display: flex;
+      align-items: center;
+      font-family: Hind;
+      font-style: normal;
+      font-weight: 600;
+      color: $lightBg;
+      text-transform: uppercase;
+      .link {
+        margin-right: 50px;
+        cursor: pointer;
+      }
+      .link--contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+        background: $blueBg;
+        width: 118px;
+        height: 34px;
+        border-radius: 28px;
+      }
+    }
+  }
+  &__content {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1378px;
+    color: $lightBg;
+    .title {
+      @include fs75;
+      margin: 147px 0 5px 0;
+      font-weight: bold;
+      font-family: 'Rubik', sans-serif;
+    }
+    .line {
+      width: 95px;
+      height: 5px;
+      background: $redBg;
+    }
+    .text {
+      @include fs18;
+      margin: 50px 0 20px 0;
+      width: 355px;
+    }
+    .btn-wrapper {
+      display: flex;
+      .btn {
+        @include btn;
+      }
+      .btn--1 {
+        margin-right: 10px;
+        background: $yellowBg;
+      }
+      .btn--2 {
+        margin-left: 10px;
+        background: inherit;
+        border: 2px solid #FFFFFF;
+      }
+    }
+  }
+}

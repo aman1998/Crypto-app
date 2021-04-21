@@ -1,0 +1,14 @@
+@import '../templates.scss';
+@import '../variables.scss';
+
+.sponsors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1308px;
+  .logo {
+    height: 43px;
+  }
+}

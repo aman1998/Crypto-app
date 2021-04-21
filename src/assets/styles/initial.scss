@@ -1,0 +1,78 @@
+@import './variables.scss';
+@import './templates.scss';
+
+* {
+    box-sizing: border-box;
+  }
+  html {
+    height: 100%;
+  }
+  body {
+    @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;700&display=swap');
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Hind', sans-serif;
+    font-style: normal;
+    @include fs16;
+    font-weight: normal;
+    height: 100%;
+    button {
+      position: relative;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2, p {
+      margin: 0;
+      color: inherit;
+    }
+    a {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      color: inherit;
+      width: 0;
+      &:hover {
+        color: inherit;
+      }
+    }
+    .container{
+      max-width: 1150px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+    position: relative;
+    min-height: 100%;
+    .back-top {
+      height: 50px;
+      border-radius: 5px;
+    }
+    .content__title {
+      @include title;
+    }
+    .loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 1px solid #f3f3f3; 
+      border-top: 1px solid #888282; 
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      animation: spin .7s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform:translate(-50%, -50%)  rotate(0deg) }
+      100% { transform:translate(-50%, -50%)  rotate(360deg)}
+    }
+  }
+
+  .lock {
+    overflow: hidden;
+  }
+  
+  
+  
