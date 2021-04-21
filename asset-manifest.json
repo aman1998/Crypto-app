@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Crypto-app/static/css/main.d9ba62e3.chunk.css",
+    "main.css": "/Crypto-app/static/css/main.38107bd0.chunk.css",
     "main.js": "/Crypto-app/static/js/main.8d62b044.chunk.js",
     "main.js.map": "/Crypto-app/static/js/main.8d62b044.chunk.js.map",
     "runtime-main.js": "/Crypto-app/static/js/runtime-main.95560ab9.js",
@@ -10,7 +10,7 @@
     "static/js/2.2aa124db.chunk.js.map": "/Crypto-app/static/js/2.2aa124db.chunk.js.map",
     "index.html": "/Crypto-app/index.html",
     "static/css/2.9033d941.chunk.css.map": "/Crypto-app/static/css/2.9033d941.chunk.css.map",
-    "static/css/main.d9ba62e3.chunk.css.map": "/Crypto-app/static/css/main.d9ba62e3.chunk.css.map",
+    "static/css/main.38107bd0.chunk.css.map": "/Crypto-app/static/css/main.38107bd0.chunk.css.map",
     "static/js/2.2aa124db.chunk.js.LICENSE.txt": "/Crypto-app/static/js/2.2aa124db.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/Crypto-app/static/media/footer.f3e6263c.png",
     "static/media/computer.890aac68.png": "/Crypto-app/static/media/computer.890aac68.png",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.95560ab9.js",
     "static/css/2.9033d941.chunk.css",
     "static/js/2.2aa124db.chunk.js",
-    "static/css/main.d9ba62e3.chunk.css",
+    "static/css/main.38107bd0.chunk.css",
     "static/js/main.8d62b044.chunk.js"
   ]
 }
