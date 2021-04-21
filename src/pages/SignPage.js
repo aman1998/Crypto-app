@@ -30,7 +30,7 @@ const SignPage = () => {
   return (
     <div className='sign'>
       <Navigation />
-      <div className='sign__content'>
+      <div className='sign__content container'>
         <form className='form'>
           {
             login ? 
