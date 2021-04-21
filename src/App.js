@@ -7,14 +7,12 @@ import './assets/styles/index.scss'
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Switch>
-          <Route path='/' component={HomePage} exact/>
-          <Route path='/sign' component={SignPage} exact/>
-        </Switch>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter basename='/crypto-app'>
+      <Switch>
+        <Route path='/' component={HomePage} exact/>
+        <Route path='/sign' component={SignPage} exact/>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
