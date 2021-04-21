@@ -9,7 +9,7 @@ import Logo5 from '../../assets/images/pinterest-logo.png'
 const Footer = () => {
   return (
     <footer>
-      <div className='footer'>
+      <div className='footer container'>
         <h2 className='footer__title'>I’d Like to Learn More About Lymcoin</h2>
         <div className='line'></div>
         <form className='footer__form'>

@@ -18,6 +18,9 @@
       margin-bottom: 247px;
       max-width: 770px;
       color: $grayBg;
+      @media screen and (max-width: 1200px) {
+        margin-bottom: 44px !important;
+      }
     }
   }
   &__bottom {
@@ -25,6 +28,9 @@
       display: flex;
       align-items: center;
       margin-bottom: 232px;
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
       .step {
         display: flex;
         align-items: center;
@@ -56,11 +62,17 @@
           position: absolute;
           width: 208px;
           font-weight: 600;
+          @media screen and (max-width: 1200px) {
+            display: none;
+          }
         }
         .step__date {
           position: absolute;
           width: 208px;
           color: $grayBg;
+          @media screen and (max-width: 1200px) {
+            display: none;
+          }
         }
         .step__text--1, .step__text--3, .step__text--5 {
           top: 40px;
@@ -79,6 +91,55 @@
         }
         .step__date--5 {
           top: 130px;
+        }
+        .step__text--5 {
+          left: -10px;
+          width: 190px;
+        }
+      }
+    }
+  }
+  .roadmap__bottom-mobile {
+    display: none;
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      margin-bottom: 54px;
+      .steps {
+        .step {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          div {
+            &:nth-child(1) {
+              position: relative;
+              width: 22px;
+              height: 22px;
+              background: $lightBg;
+              border: 6px solid $yellowBg;
+              border-radius: 11.5px;
+            }
+            &:nth-child(2) {
+              max-width: 171px;
+              width: 6px;
+              height: 105px;
+              background: $yellowBg;
+            }
+          }
+          .process__circle {
+            background: #090F3F !important;
+            border: 6px solid #E0E0E0 !important;
+          }
+          .process__line {
+            background: #E0E0E0 !important;
+          }
+          .step__text {
+            margin-left: 30px;
+            width: 208px;
+          }
+          .step__date {
+            margin-left: 30px;
+            width: 208px;
+          }
         }
       }
     }

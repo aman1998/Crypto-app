@@ -17,7 +17,7 @@ const Wallets = () => {
   ]
   return (
     <section className='wallets'>
-      <img src={Photo} className='photo' alt='wallet-photo' />
+      <img src={Photo} className='photo' alt='wallet' />
       <div className='wallets__content'>
         <Title title='06. WALLETS'/>
         <div className='name'>Lymcoin Wallets</div>

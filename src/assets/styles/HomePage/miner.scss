@@ -4,19 +4,39 @@
 .miner {
   position: relative;
   margin-bottom: 110px !important;
+  @media screen and (max-width: 1200px) {
+    background: url('../../images/MaskGroup3.png') center;
+    padding: 50px 15px;
+    width: 100%;
+    margin-bottom: 70px !important;
+  }
   .photo-mask {
     width: 100%;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
   .photo {
     position: absolute;
     right: 20px;
     bottom: 25%;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
   &__content {
     position: absolute;
     top: 200px;
     left: 171px;
     color: $lightBg;
+    @media screen and (max-width: 1200px) {
+      top: 130px;
+      left: 0;
+      position: relative;
+    }
+    @media screen and (max-width: 800px) {
+      top: 0px;
+    }
     .title {
       @include fs48;
       margin: 20px 0 11px 0;
@@ -33,16 +53,23 @@
     .platforms {
       display: flex;
       margin-bottom: 26px;
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+      }
       .platform {
         display: flex;
         padding: 14px 19px;
         background: #0B060C;
-        width: 350px;
-        // width: 100%;
+        max-width: 350px;
+        width: 100%;
         box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.15);
         border-radius: 38.5px;
         &:nth-child(2) {
           margin-left: 50px;
+          @media screen and (max-width: 800px) {
+            margin-top: 20px;
+            margin-left: 0;
+          }
         }
         img {
           margin-right: 28px;

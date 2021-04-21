@@ -8,10 +8,21 @@
   margin: 0 auto;
   margin-bottom: 196px;
   max-width: 1288px;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 77px;
+  }
   &__image {
     margin-right: 20px;
     width: 505px;
     height: 392px;
+    @media screen and (max-width: 800px) {
+      margin-right: 0px;
+      margin-bottom: 51px;
+      width: 306px;
+      height: 238px;
+    }
   }
   &__content {
     .name {
@@ -31,14 +42,14 @@
 }
 
 .welcome-2 {
-  // padding: 0;
-  // margin: 0;
-  // margin-bottom: 127px;
-  // max-width: 100%;
+  margin-bottom: 67px;
   .welcome__image {
     // width: 550px;
     height: 620px;
     object-fit: cover;
+    @media screen and (max-width: 800px) {
+      height: 418px;
+    }
   }
   .btn {
     @include btn;

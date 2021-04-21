@@ -15,14 +15,14 @@ const Chart = () => {
             <div>Current Price</div>
             <div>$541.27</div>
           </div>
-          <img src={Photo} alt='graph-photo' className='photo'/>
+          <img src={Photo} alt='graph' className='photo'/>
         </div>
         <div className='right'>
           <div className='price'>
             <div>Market Cap </div>
             <div>$147 547 106</div>
           </div>
-          <img src={Photo} alt='graph-photo' className='photo'/>
+          <img src={Photo} alt='graph' className='photo'/>
         </div>
       </div>
     </section>

@@ -8,6 +8,7 @@
     height: 100%;
   }
   body {
+    position: relative;
     @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;700&display=swap');
     margin: 0;
     font-family: 'Rubik', sans-serif;
@@ -57,16 +58,28 @@
       top: 50%;
       left: 50%;
       border: 1px solid #f3f3f3; 
-      border-top: 1px solid #888282; 
+      border-top: 1px solid #b3b3b3; 
       border-radius: 50%;
-      width: 10px;
-      height: 10px;
+      width: 15px;
+      height: 16px;
       animation: spin .7s linear infinite;
     }
     
     @keyframes spin {
       0% { transform:translate(-50%, -50%)  rotate(0deg) }
       100% { transform:translate(-50%, -50%)  rotate(360deg)}
+    }
+    .scroll-btn {
+      @include btn;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+      background: $redBg;
     }
   }
 

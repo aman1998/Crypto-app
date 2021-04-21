@@ -7,6 +7,12 @@ export { default as Title } from './Title/Title';
 
 // Navigation
 export { default as Navigation } from './Navigation/Navigation';
+export { default as Burger } from './Navigation/Burger';
+
+// Sign
+export { default as Login } from './Sign/Login';
+export { default as Register } from './Sign/Register';
+export { default as ResetPass} from './Sign/ResetPass';
 
 // HomePage
 export { default as Welcome } from './Home/Welcome';

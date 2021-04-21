@@ -1,12 +1,7 @@
 import React from 'react';
 import { Navigation } from '../index';
-import message from 'antd-message';
-
 
 const Header = () => {
-  const handleMessage = () => {
-    message.success('kello')
-  }
   return (
     <header className='header'>
       <Navigation />

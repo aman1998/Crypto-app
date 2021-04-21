@@ -25,7 +25,7 @@ const Miner = () => {
             </div>
           </div>
           <div className='platform'>
-            <img src={Logo1} className='logo' alt='windows' />
+            <img src={Logo2} className='logo' alt='windows2' />
             <div className='right'>
               <div>Windows Lymcoin Miner</div>
               <div>Download</div>

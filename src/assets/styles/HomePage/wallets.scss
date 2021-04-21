@@ -7,10 +7,25 @@
   margin: 0 auto;
   margin-bottom: 190px;
   max-width: 1324px;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column-reverse;
+    img {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    margin-bottom: 115px;
+    .img {
+      display: block;
+    }
+  }
   &__content {
     max-width: 750px;
     width: 100%;
     margin-left: 65px;
+    @media screen and (max-width: 800px) {
+      margin-left: 0;
+    }
     .name {
       @include fs48;
       margin: 20px 0 50px 0;
@@ -21,10 +36,20 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 50px;
+      @media screen and (max-width: 800px) {
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      @media screen and (max-width: 340px) {
+        justify-content: center;
+      }
       .btn {
         @include btn;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-        color: #090F3F
+        color: #090F3F;
+        @media screen and (max-width: 800px) {
+          margin-bottom: 30px;
+        }
       }
       .btn--yellow {
         background: $yellowBg;
@@ -35,6 +60,10 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+      }
       .card {
         display: flex;
         margin-bottom: 20px;

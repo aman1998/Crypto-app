@@ -5,10 +5,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 0 15px;
   margin: 0 auto;
   max-width: 1308px;
+  @media screen and (max-width: 800px) {
+    flex-wrap: wrap;
+  }
   .logo {
     height: 43px;
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 40px;
+    }
   }
 }
