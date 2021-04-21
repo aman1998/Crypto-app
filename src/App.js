@@ -7,7 +7,7 @@ import './assets/styles/index.scss'
 
 function App() {
   return (
-    <BrowserRouter basename='/crypto'>
+    <BrowserRouter basename='/Crypto-app'>
       <Switch>
         <Route path='/' component={HomePage} exact/>
         <Route path='/sign' component={SignPage} exact/>
